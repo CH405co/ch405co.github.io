@@ -9,7 +9,7 @@
 
 <body>
 
-    <nav>
+    <nav aria-label="Main navigation">
         <a href="/">Home</a>
         <a href="/about/">About</a>
         <a href="/projects/">Projects</a>
@@ -18,7 +18,19 @@
         <a href="/contact/">Contact</a>
     </nav>
 
-    <h1>Papers</h1>
+    <main>
+        <header>
+            <h1>Papers</h1>
+            <p>This section contains technical papers and research.</p>
+        </header>
+
+        <section aria-labelledby="paper-list-heading">
+            <h2 id="paper-list-heading">Papers</h2>
+            <ul>
+                <li><a href="/papers/example-paper/">[Example paper title]</a> — [Author], [Date]</li>
+            </ul>
+        </section>
+    </main>
 
 </body>
 

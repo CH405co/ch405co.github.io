@@ -24,3 +24,10 @@ h1 {
 h2 {
     margin-top: 35px;
 }
+
+@media (max-width: 600px) {
+    nav a {
+        display: block;
+        margin-bottom: 10px;
+    }
+}

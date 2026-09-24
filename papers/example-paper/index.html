@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>[Paper title] - Papers - gitrhythmsec</title>
+    <title>Saving a Proxmox Instance and Wiping the Disk - Papers - gitrhythmsec</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style.css">
 </head>
@@ -19,34 +19,33 @@
     </nav>
 
     <main>
+        <p><a href="/papers/">Back to Papers</a></p>
         <article>
             <header>
-                <h1>[Paper title]</h1>
-                <p>Author: [Author name]</p>
-                <p>Date: [Publication or posting date]</p>
+                <h1>Saving a Proxmox Instance and Wiping the Disk</h1>
+                <p>Author: Colton Hooks</p>
+                <p>Date: 9/23/2026</p>
             </header>
 
             <section aria-labelledby="abstract-heading">
                 <h2 id="abstract-heading">Abstract</h2>
-                <p>[Add the paper abstract here.]</p>
+                <p>This paper covers backing up VMs within Proxmox, compressing the Proxmox OS, moving everything to a new machine for storage, verifying each part, and sanitizing the disk to relinquish control.</p>
             </section>
 
             <section aria-labelledby="overview-heading">
                 <h2 id="overview-heading">Overview</h2>
-                <p>[Add a description or overview of the paper here.]</p>
+                <p>You may be faced with sending a machine or hard drive out of your possession, but you want to preserve the contents, and ensure that they won't easily be recovered. This paper describes the process of creating backups for VMs that are running on Proxmox, then moving the base OS (with configurations) to another machine for long term storage. This will allow everything to be set up on new hardware at some point in the future. Finally, after Proxmox has been packaged up, the existing SSD is sanitized using Block Erase, which goes below the filesystem/OS level, and destroys the physical electrical charge that represents the data stored.</p>
             </section>
 
             <section aria-labelledby="files-heading">
                 <h2 id="files-heading">Paper and Supporting Files</h2>
                 <ul>
                     <li><a href="ProxmoxBackupandWipe.pdf" target="_blank" rel="noopener noreferrer">View the paper (PDF)</a></li>
-                    <li><a href="ProxmoxBackupandWipe.pdf">Download the paper (PDF)</a> — [Add the PDF file to this directory.]</li>
-                    <li>[Add links to supporting files or images here.]</li>
+                    <li><a href="ProxmoxBackupandWipe.pdf">Download the paper (PDF)</a></li>
+                    <!--<li>[Add links to supporting files or images here.]</li>-->
                 </ul>
             </section>
         </article>
-
-        <p><a href="/papers/">Back to Papers</a></p>
     </main>
 
 </body>

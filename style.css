@@ -17,7 +17,11 @@ nav {
     text-decoration: none;
 }
 
-.mobile-nav {
+nav .desktop-nav {
+    display: block;
+}
+
+nav .mobile-nav {
     display: none;
 }
 
@@ -211,11 +215,11 @@ a.contact-card:focus-visible {
 }
 
 @media (max-width: 600px) {
-    .mobile-nav {
+    nav .mobile-nav {
         display: block;
     }
 
-    .desktop-nav {
+    nav .desktop-nav {
         display: none;
     }
 

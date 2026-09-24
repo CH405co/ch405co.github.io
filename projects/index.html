@@ -18,7 +18,41 @@
         <a href="/contact/">Contact</a>
     </nav>
 
-    <h1>Projects</h1>
+    <main class="projects-page">
+        <header class="projects-intro">
+            <h1>Projects</h1>
+            <p>A selection of experiments and ongoing work.</p>
+        </header>
+
+        <section aria-label="Project portfolio">
+            <div class="project-grid">
+                <article class="project-card">
+                    <header class="project-card__header">
+                        <p class="project-card__category">Hardware / Networking</p>
+                        <h2>Arduino Network Scanner</h2>
+                    </header>
+                    <p class="project-card__status">Completed experiment</p>
+                    <p>A small network-scanning project built with an Arduino Uno, Ethernet Shield 2 using the W5500, and a 16x2 I2C LCD. The project explored DHCP, subnet calculations, ICMP scanning, network discovery, and displaying results on constrained hardware.</p>
+                    <p class="project-card__note">The physical project has since been disassembled, but I plan to document what I built and the lessons learned from the experiment.</p>
+                    <footer class="project-card__footer">
+                        <!-- Add an optional “View project” link here when a project page is available. -->
+                    </footer>
+                </article>
+
+                <article class="project-card">
+                    <header class="project-card__header">
+                        <p class="project-card__category">Web / Git / GitHub Pages</p>
+                        <h2>Building This Website</h2>
+                    </header>
+                    <p class="project-card__status">Active project</p>
+                    <p>Building this personal site while learning Git, GitHub workflows, responsive web design, and GitHub Pages. The project is also being used to experiment with AI-assisted development while manually reviewing and managing the Git workflow.</p>
+                    <footer class="project-card__footer">
+                        <!-- Add an optional “View project” link here when a project page is available. -->
+                    </footer>
+                </article>
+            </div>
+        </section>
+    </main>
 
 </body>
 

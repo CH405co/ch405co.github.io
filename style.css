@@ -12,9 +12,23 @@ nav {
     border-bottom: 1px solid #ccc;
 }
 
-nav a {
+.nav-links a {
     margin-right: 20px;
     text-decoration: none;
+}
+
+.mobile-nav {
+    display: none;
+}
+
+.mobile-nav summary {
+    width: fit-content;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.mobile-nav summary span {
+    margin-right: 5px;
 }
 
 h1 {
@@ -197,9 +211,23 @@ a.contact-card:focus-visible {
 }
 
 @media (max-width: 600px) {
-    nav a {
+    .mobile-nav {
         display: block;
-        margin-bottom: 10px;
+    }
+
+    .desktop-nav {
+        display: none;
+    }
+
+    .mobile-nav[open] .nav-links {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        padding-top: 12px;
+    }
+
+    .mobile-nav[open] .nav-links a {
+        margin-right: 0;
     }
 
     .contact-grid {
